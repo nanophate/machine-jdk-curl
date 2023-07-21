@@ -13,8 +13,8 @@ jobs:
     - run:
         name: curl on openjdk:17.0
         command: |
-          docker run --rm cimg/openjdk:17.0 curl -v --retry 3 "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.13.1.zip" 
+          docker run --rm cimg/openjdk:17.0 curl -v --retry 3 "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.13.1.zip" -o "17-awscliv2.zip"
     - run:
         name: curl on openjdk:15.0
         command: |
-          docker run --rm cimg/openjdk:15.0 curl -v --retry 3 "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.13.1.zip" 
+          docker run --rm cimg/openjdk:15.0 curl -v --retry 3 "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.13.1.zip" -o "15-awscliv2.zip"
